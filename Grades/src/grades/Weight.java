@@ -1,42 +1,25 @@
 package grades;
 
+/**
+ * Holds the percentage weights for each graded component of a course.
+ * All weights should sum to 100.
+ */
 public class Weight {
-	
-	private int quizW;
-	private int projectW;
-	private int midW;
-	private int finalExamW;
-	
-	public Weight(int quizW, int projectW, int midW, int finalExamW) {
-		super();
-		this.quizW = quizW;
-		this.projectW = projectW;
-		this.midW = midW;
-		this.finalExamW = finalExamW;
-	}
 
-	public int getQuizW() {
-		return quizW;
-	}
+    private final int quizWeight;
+    private final int projectWeight;
+    private final int midtermWeight;
+    private final int finalExamWeight;
 
-	public int getProjectW() {
-		return projectW;
-	}
+    public Weight(int quizWeight, int projectWeight, int midtermWeight, int finalExamWeight) {
+        this.quizWeight      = quizWeight;
+        this.projectWeight   = projectWeight;
+        this.midtermWeight   = midtermWeight;
+        this.finalExamWeight = finalExamWeight;
+    }
 
-
-	public int getMidW() {
-		return midW;
-	}
-
-	public int getFinalExamW() {
-		return finalExamW;
-	}
-
-	
-	
-	
-	
-	
-	
-
+    public int getQuizWeight()      { return quizWeight; }
+    public int getProjectWeight()   { return projectWeight; }
+    public int getMidtermWeight()   { return midtermWeight; }
+    public int getFinalExamWeight() { return finalExamWeight; }
 }
